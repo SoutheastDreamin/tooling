@@ -7,8 +7,8 @@ const sessionUtils = require('../lib/sessions');
 const program = new commander.Command();
 
 program
-    .name('Sends acceptance email to speakers')
-    .description('Reads a selected session CSV and emails the acceptance session owners')
+    .name('Sends rejection email to speakers')
+    .description('Reads a selected session CSV and emails the rejected session owners')
     .version('1.0.0')
     .requiredOption('--csv <file>')
     .requiredOption('--year <year>');
@@ -16,7 +16,7 @@ program
 program.parse();
 
 const options = program.opts();
-const TEMPLATE_PATH = `template/${options.year}/speakers/acceptance`;
+const TEMPLATE_PATH = `template/${options.year}/speakers/rejection`;
 
 const emailSessions_bound = sessionUtils.emailSessions.bind(null, TEMPLATE_PATH);
 
@@ -29,7 +29,10 @@ function filterAndGroup(sessions) {
     return new Promise(function (resolve) {
         resolve(
             sessionUtils.groupByEmail(
-                lodash.filter(sessions, 'selected')
+                lodash.reject(
+                    lodash.reject(sessions, 'selected'),
+                    'duplicate'
+                )
             )
         );
     });
