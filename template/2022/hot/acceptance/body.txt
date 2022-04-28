@@ -1,0 +1,32 @@
+{{name}},
+
+Good news! We’ve selected your hands-on training to be presented at Southeast Dreamin ‘22! We’re super grateful you submitted and are excited to have you as a part of this event!
+Below are some deadlines and such.
+
+{{#each sessions}}
+Session Name: {{title}}
+{{/each}}
+
+Your To Do’s
+* Fill out the speaker information form [1]: due 5/13
+* Register for free [2] with the speaker code (SEDSPEAKER2022): due ASAP
+  * Please share this with your co-speaker (if applicable).
+  * Please DO NOT share this code with anyone else. :-)
+* Reserve your hotel room [3]: due ASAP
+* Start publicizing your session (Twitter, LinkedIn, Facebook, user groups, etc.): due ASAP
+  * Relevant hashtag: #SED22
+* Completed slides uploaded: due 6/1
+  * Please use our slide template [4]
+
+Contact info to keep handy:
+  * Patrick Connelly - 919-624-0764
+
+We look forward to seeing you in Atlanta!!
+Patrick & Team
+
+P.S. If you have a co-presenter, please forward this email to them to spread the love!
+
+[1] https://forms.gle/Z129GkvivWR8fKo97
+[2] https://www.eventbrite.com/e/southeast-dreamin-2022-finally-tickets-329168591117
+[3] https://www.marriott.com/event-reservations/reservation-link.mi?id=1640021049898&key=GRP&app=resvlink
+[4] http://bit.ly/sed22slides
