@@ -1,0 +1,16 @@
+{{name}},
+
+We wish we had better news. We’re sorry to say your hands-on training(s) were not selected for Southeast Dreamin ‘24. If you submitted multiple proposals, you may have received a separate acceptance email for that hands-on training.
+
+{{#each sessions}}
+* {{title}}
+{{/each}}
+
+We know hands-on training proposals take time and we realize you’re probably disappointed. Not to sound cliche, but we deliberated hard on each proposal. We received more than 20 proposals for 10 slots. As a result, awesome proposals had to be declined.
+
+Although your hands-on training wasn’t picked this year, your passion for sharing your knowledge is greatly appreciated.  As a token of our appreciation, please use this code for 10% off registration: SED10
+
+We hope you’ll consider submitting again for Southeast Dreamin ‘25!
+
+Once again, thank you!
+Patrick &amp; Team

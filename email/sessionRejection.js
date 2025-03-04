@@ -1,5 +1,4 @@
 const commander = require('commander');
-const lodash = require('lodash');
 
 const files = require('../lib/files');
 const sessionUtils = require('../lib/sessions');
@@ -28,12 +27,7 @@ const emailSessions_bound = sessionUtils.emailSessions.bind(null, TEMPLATE_PATH)
 function filterAndGroup(sessions) {
     return new Promise(function (resolve) {
         resolve(
-            sessionUtils.groupByEmail(
-                lodash.reject(
-                    lodash.reject(sessions, 'selected'),
-                    'duplicate'
-                )
-            )
+            sessionUtils.groupByEmail(sessions)
         );
     });
 }

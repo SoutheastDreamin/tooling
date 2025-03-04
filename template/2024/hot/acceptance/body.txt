@@ -1,0 +1,16 @@
+{{name}},
+
+Whoops! We messed up with our last email...
+Good news! We’ve selected your hands-on training to be presented at Southeast Dreamin ‘24! We’re super grateful you submitted and are excited to have you as a part of this event!
+
+{{#each sessions}}
+Session Name: {{title}}
+{{/each}}
+
+Let us know if you're still in by responding back to this email ASAP. After we get your response, we'll send you an invite to our Slack space where we'll give you the rest of your information.
+
+Contact info to keep handy:
+  * Patrick Connelly - 919-624-0764
+
+We look forward to seeing you in Atlanta!!
+Patrick & Team
